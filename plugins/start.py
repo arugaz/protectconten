@@ -162,7 +162,7 @@ async def send_text(client: Bot, message: Message):
         
         pls_wait = await message.reply("<i>Broadcasting Message.. This will Take Some Time</i>")
         for row in query:
-            chat_id = int(row[0])
+            chat_id = int(row)
             try:
                 await broadcast_msg.copy(chat_id)
                 successful += 1

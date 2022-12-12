@@ -24,9 +24,6 @@ async def full_userbase():
     return users
 
 async def query_msg():
-    try:
-        collection = SESSION["user"]
-        query = collection.find().distinct("id")
-        return query
-    finally:
-        SESSION.close()
+    collection = SESSION["user"]
+    query = collection.find().distinct("id")
+    return query
