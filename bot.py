@@ -1,7 +1,6 @@
 #(©)Codexbotz
 # @IstMeYons
 
-import pyromod.listen
 from pyrogram import Client
 import sys
 
